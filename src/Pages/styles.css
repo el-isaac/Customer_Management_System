@@ -1,0 +1,486 @@
+/*
+   ELECTRIC CYBER THEME  JavaFX
+ */
+
+/* root */
+.root-pane, .main-pane {
+    -fx-background-color: linear-gradient(
+        to bottom right,
+        #071a2b,
+        #0b3f66,
+        #0fa3ff
+    );
+    -fx-font-family: "Segoe UI", "Roboto", sans-serif;
+    -fx-text-fill: #eafaff;
+}
+
+/* CARDS / PANELS*/
+.panel, .dashboard-card, .form-box, .info-grid, .table-container {
+    -fx-background-color: linear-gradient(
+        to bottom right,
+        rgba(15,40,70,0.95),
+        rgba(25,70,120,0.9)
+    );
+    -fx-background-radius: 18;
+    -fx-padding: 22;
+    -fx-border-radius: 18;
+    -fx-border-color: rgba(0,255,255,0.35);
+    -fx-border-width: 1.2;
+    -fx-effect: dropshadow(
+        three-pass-box,
+        rgba(0,255,255,0.45),
+        22, 0.25, 0, 10
+    );
+}
+
+.logo {
+    -fx-font-weight: bold;
+    -fx-font-size: 150px;
+    -fx-font-family: "Segoe UI", "Arial Black";
+
+    /* TEXT COLOR BLACK */
+    -fx-text-fill: black;
+
+    /* Centering */
+    -fx-alignment: center;
+    -fx-padding: 40 80 40 80;
+
+    /* INSIDE FRAME = gradient */
+    -fx-background-color: linear-gradient(
+                            to right,
+                            #00ffff,
+                            #00aaff
+                          );
+    -fx-background-radius: 35;
+    -fx-border-radius: 35;
+
+    /* Keep cyan border */
+    -fx-border-color: rgba(0, 255, 255, 0.8);
+    -fx-border-width: 2;
+
+    /* Optional glow */
+    -fx-effect: dropshadow(
+                    three-pass-box,
+                    rgba(0,255,255,0.9),
+                    22, 0.35, 0, 10
+                );
+}
+
+.label.logo .text {
+    -fx-fill: linear-gradient(
+                to right,
+                #000010,
+                #000021
+              );
+}
+
+
+
+
+
+
+/* LABELS */
+.label {
+    -fx-text-fill: #cfffff;
+}
+
+.label-bold {
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+.label-value {
+    -fx-text-fill: #00ffff;
+    -fx-effect: dropshadow(one-pass-box, #00ffff, 8, 0, 0, 0);
+}
+
+/*  NAVBAR */
+.navbar, .top-bar, .header {
+    -fx-background-color: linear-gradient(
+        to right,
+        #041c30,
+        #0a5fa0
+    );
+    -fx-padding: 16;
+    -fx-spacing: 20;
+    -fx-alignment: center-left;
+    -fx-border-radius: 10 10 18 18;
+    -fx-effect: dropshadow(
+        three-pass-box,
+        rgba(0,255,255,0.5),
+        18, 0.3, 0, 8
+    );
+}
+
+.navbar-title, .page-title, .title-label {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #00ffff;
+    -fx-effect: dropshadow(one-pass-box, #00ffff, 12, 0, 0, 0);
+}
+
+/*  SIDEBAR  */
+.sidebar {
+    -fx-background-color: linear-gradient(
+        to bottom,
+        rgba(5,20,35,0.95),
+        rgba(10,60,100,0.95)
+    );
+    -fx-padding: 22;
+    -fx-spacing: 16;
+    -fx-pref-width: 230;
+    -fx-background-radius: 18;
+    -fx-effect: dropshadow(
+        three-pass-box,
+        rgba(0,255,255,0.35),
+        16, 0.3, 0, 8
+    );
+}
+
+.sidebar-button {
+    -fx-background-color: linear-gradient(
+        to right,
+        #123d5f,
+        #0b2e4a
+    );
+    -fx-text-fill: #eafaff;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 12 20;
+    -fx-background-radius: 14;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(
+        three-pass-box,
+        rgba(0,150,255,0.35),
+        8, 0.2, 0, 4
+    );
+}
+
+.sidebar-button:hover {
+    -fx-background-color: linear-gradient(
+        to right,
+        #00ffff,
+        #00aaff
+    );
+    -fx-text-fill: #032133;
+    -fx-effect: dropshadow(
+        three-pass-box,
+        rgba(0,255,255,0.9),
+        22, 0.35, 0, 10
+    );
+}
+
+/*  DASHBOARD CARDS  */
+.dashboard-card {
+    -fx-alignment: center;
+    -fx-padding: 28;
+    -fx-background-radius: 20;
+}
+
+.dashboard-card:hover {
+    -fx-background-color: linear-gradient(
+            to right,
+            #00ffff,
+            #00aaff
+        );
+        -fx-text-fill: #032133;
+        -fx-effect: dropshadow(
+            three-pass-box,
+            rgba(0,255,255,0.9),
+            22, 0.35, 0, 10
+        );
+}
+
+/* Change card text on hover */
+.dashboard-card:hover .card-title {
+    -fx-text-fill: #032133;
+}
+
+.dashboard-card:hover .card-number {
+    -fx-text-fill: #032133;
+    -fx-effect: none; /* remove glow on hover */
+}
+
+.card-title {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+.card-number {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #00ffff;
+    -fx-effect: dropshadow(one-pass-box, #00ffff, 14, 0, 0, 0);
+}
+
+/*  TABLE VIEW  */
+.table-view {
+    -fx-background-color: rgba(10,30,50,0.85);
+    -fx-background-radius: 14;
+    -fx-border-radius: 14;
+    -fx-border-color: rgba(0,255,255,0.3);
+}
+
+/* TABLE HEADER FIX */
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(
+        to right,
+        #0b3a5e,
+        #0a5fa0
+    );
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #00ffff;
+    -fx-font-weight: bold;
+}
+
+
+.table-view .cell {
+    -fx-background-color: rgba(20,40,60,0.75);
+    -fx-text-fill: #eafaff;
+}
+
+.table-view .cell:hover {
+    -fx-background-color: rgba(0,255,255,0.35);
+}
+
+/* SELECTED ITEMS LISTVIEW */
+.selected-items-list-view {
+    -fx-background-color: transparent;   /* main listview background */
+    -fx-control-inner-background: transparent;
+    -fx-padding: 5;
+    -fx-border-width: 0;
+}
+
+/* all cells transparent */
+.selected-items-list-view .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #00ffff; /* neon cyan text, change as needed */
+}
+
+/* selected cells transparent too */
+.selected-items-list-view .list-cell:filled:selected,
+.selected-items-list-view .list-cell:filled:selected:focused {
+    -fx-background-color: rgba(0,255,255,0.1); /* very subtle highlight */
+    -fx-text-fill: #00ffff;
+}
+
+/* hover effect */
+.selected-items-list-view .list-cell:hover {
+    -fx-background-color: rgba(0,255,255,0.2);
+    -fx-text-fill: #00ffff;
+}
+
+
+.selected-items-list-view .list-cell .graphic {
+    -fx-padding: 0;
+}
+
+/* Remove button in selected items ListView */
+.selected-remove-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ff5555;   /* normal red */
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-padding: 2 5 2 5;
+}
+
+.selected-remove-btn:hover {
+    -fx-text-fill: #ff0000;   /* bright red on hover */
+    -fx-background-color: rgba(255,0,0,0.1);  /* subtle red glow on hover */
+    -fx-background-radius: 4;
+}
+
+
+/*  INPUT FIELDS */
+.input-field {
+    -fx-background-color: rgba(20,50,80,0.8);
+    -fx-border-color: rgba(0,255,255,0.4);
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 10 14;
+    -fx-text-fill: #ffffff;
+}
+
+.input-field:focused {
+    -fx-border-color: #00ffff;
+    -fx-effect: dropshadow(
+        three-pass-box,
+        rgba(0,255,255,0.8),
+        12, 0.3, 0, 0
+    );
+}
+
+/* COMBOBOX  */
+.combo-box .list-view {
+    -fx-background-color: rgba(10,30,50,0.95);
+}
+
+.combo-box .list-cell {
+    -fx-text-fill:  black;
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: rgba(0,255,255,0.4);
+}
+
+/*  BUTTONS  */
+.button-primary {
+    -fx-background-color: linear-gradient(to right, #00ffff, #0088ff);
+}
+.button-primary:hover {
+    -fx-background-color: linear-gradient(to right, #7fffff, #33bbff);
+}
+
+.button-success {
+    -fx-background-color: linear-gradient(to right, #00ffcc, #00cc88);
+}
+.button-success:hover {
+    -fx-background-color: linear-gradient(to right, #33ffd6, #00aa66);
+}
+
+.button-danger {
+    -fx-background-color: linear-gradient(to right, #ff3b3b, #cc0000);
+}
+.button-danger:hover {
+    -fx-background-color: linear-gradient(to right, #ff6b6b, #ff0000);
+}
+
+/* MESSAGES */
+.message-label, .success-message {
+    -fx-font-weight: bold;
+    -fx-text-fill: #00ffcc;
+    -fx-effect: dropshadow(one-pass-box, #00ffcc, 8, 0, 0, 0);
+}
+.scroll-pane > .viewport {
+    -fx-background-color: linear-gradient(
+        to bottom right,
+        rgba(15,40,70,0.95),
+        rgba(25,70,120,0.9)
+    );
+}
+
+/* Chart container */
+.bar-chart {
+    -fx-background-color: transparent;
+    -fx-padding: 10;
+    -fx-bar-gap: 5;
+    -fx-category-gap: 25;
+}
+
+/* Removes plot background */
+.bar-chart .chart-plot-background {
+    -fx-background-color: transparent;
+}
+
+/* Chart title */
+.bar-chart .chart-title {
+    -fx-text-fill: #e0f7ff;  /* bluish-white title */
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(one-pass-box, rgba(224,247,255,0.4), 8, 0, 0, 0);
+}
+
+/* Axis labels */
+.bar-chart .axis-label,
+.bar-chart .axis-tick-mark-label {
+    -fx-text-fill: #e0f7ff;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+/* Grid lines */
+.bar-chart .chart-vertical-grid-lines,
+.bar-chart .chart-horizontal-grid-lines {
+    -fx-stroke: rgba(224,247,255,0.1);
+    -fx-stroke-dash-array: 2 2;
+}
+.bar-chart .y-axis .tick-label {
+    -fx-text-fill: #00ffff;   /* neon cyan */
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(one-pass-box, rgba(0,255,255,0.6), 6, 0, 0, 0);
+}
+
+
+/* Bars - placeholder for different colors, effect applied to all */
+.bar-chart .chart-bar {
+    -fx-background-radius: 2;
+    -fx-effect: dropshadow(one-pass-box, rgba(224,247,255,0.35), 8, 0, 0, 2);
+}
+
+
+/* INVOICE CLEAN STYLE */
+
+/* Invoice container */
+.invoice-content {
+    -fx-background-color: white;
+    -fx-border-color: lightgray;
+    -fx-border-width: 1px;
+    -fx-border-radius: 4px;
+    -fx-padding: 20px;
+    -fx-effect: none; /* remove outer shadows for invoice */
+}
+
+/* Invoice labels and values */
+.invoice-content .label-bold,
+.invoice-content .label-value,
+.invoice-content .title-label {
+    -fx-effect: none;        /* remove shadows and glows */
+    -fx-text-fill: #333333;  /* dark gray for labels */
+    -fx-font-size: 14px;     /* readable invoice font */
+}
+
+/* Info grid inside invoice */
+.invoice-content .info-grid {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-hgap: 12px;
+    -fx-vgap: 8px;
+}
+
+/*SIMPLE TABLE INVOICE
+Table container */
+.invoice-content .invoice-table-container {
+    -fx-padding: 10px;
+}
+
+/* Table view */
+.invoice-content .invoice-table-view {
+    -fx-border-color: black;      /* outer border */
+    -fx-border-width: 1px;
+    -fx-border-radius: 0;
+    -fx-table-cell-border-color: black; /* cell borders */
+    -fx-background-color: white;
+}
+
+/* Table header */
+.invoice-content .invoice-table-view .column-header-background {
+    -fx-background-color: white;  /* plain header */
+    -fx-border-color: black;
+    -fx-border-width: 0 0 1px 0;  /* bottom border only */
+}
+
+.invoice-content .invoice-table-view .column-header .label {
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+    -fx-font-size: 13px;
+}
+
+/* Table cells */
+.invoice-content .invoice-table-view .cell {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-font-size: 13px;
+    -fx-alignment: center-left;
+}
+
+
+
+
