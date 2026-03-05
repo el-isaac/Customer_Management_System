@@ -1,7 +1,7 @@
 # Customer Management System
 
 The Customer Management System is a desktop Application in Java that helps manage customers, materials,
-quoation, projectes, and inventory in an organized and automated way.
+quoatation, projectes, and inventory in an organized and automated way.
 
 The system allows users to create customer records, manage material, generate quoatation, create new 
 projects, and automatically calculate totat payments. It also updates inventory level dynamically when 
